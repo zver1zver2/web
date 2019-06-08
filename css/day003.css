@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+body {
+  background-color: #ccc;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.karkas {
+  background-color: #fff;
+  width: 800px;
+  margin: 0 auto;
+}
+
+header img {
+  display: block;
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.banner {
+  background-color: #999;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.banner h1 {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  border-bottom: 3px solid #9dc5f0;
+  border-top: 1px solid #f3f3f3;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  float: left;
+  padding: 10px 11px;
+  border-left: 1px solid #f4f4f4;
+}
+
+nav ul li:first-child {
+  border-left: none;
+}
+
+nav ul li a {
+  color: #5f5d67;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+article {
+  width: 400px;
+  float: left;
+  padding: 25px 25px 35000px 25px;
+  margin-bottom: -35000px;
+}
+
+article ul li {
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+aside {
+  width: 260px;
+  float: right;
+  padding: 25px 25px 35000px 25px;
+  margin-bottom: -35000px;
+}
+
+aside ol li {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+main {
+  overflow: hidden;
+}
+
+footer {
+  background-color: #999;
+  font-size: 14px;
+  padding: 20px;
+}

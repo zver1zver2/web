@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid #999;*/
+}
+
+h1, h2, h3, h4, h5 ,h6, p {
+  margin-bottom: 8px;
+}
+.main-frame {
+  margin: 0 auto;
+  width: 800px;
+}
+
+header img {
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+}
+
+nav {
+  border: 1px solid blue;
+}
+.menu {
+  margin: 15px auto;
+  border: 1px solid red;
+  width: 500px;
+  overflow: hidden;
+}
+nav ul {
+  background-color: #ccc;
+  list-style: none;
+
+}
+
+nav ul li {
+  border-left: 1px solid #ccc;
+  float: left;
+  padding: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+main {
+  overflow: hidden;
+}
+
+.art1 {
+  float: left;
+  width: 500px;
+  padding: 5px 5px 35000px 5px;
+  margin-bottom: -35000px;
+}
+
+.aside1 {
+  float: right;
+  width: 250px;
+  padding: 5px 5px 35000px 5px;
+  margin-bottom: -35000px;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 8px;
+  padding-top: 12px;
+}
+
+footer h4 {
+  text-align: center;
+}
