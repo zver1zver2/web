@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang=ru dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Day 007 - June 12, 2019. Thursday</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="day007.css">
+  <link rel="stylesheet" href="table-style.css">
+  <link rel="stylesheet" href="form-style.css">
+</head>
+
+<body>
+  <header>
+    <h1 style="text-align: center;">Day 007 - June 12, 2019. Wednesday - Today will be a hard working day :)</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Navigation</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--  main part of web site -->
+  <main>
+    <article class="artcile1">
+      <h2>HTML Tables</h2>
+      <h3>HTML Table Example</h3>
+      <h3>Defining an HTML Table</h3>
+      <p>An HTML table is defined with the <code>&lt;table></code> tag.</p>
+      <p>Each table row is defined with the <code>&lt;tr></code> tag. A table header is defined with the <code>&lt;th></code> tag. By default, table headings are bold and centered. A table data/cell is defined with the <code>&lt;td></code> tag.</p>
+      <table>
+        <!-- <tr>
+            <td colspan="3" class="table-header">HTML Table Tags</td>
+          </tr> -->
+        <caption>HTML Table Tags</caption>
+        <tr>
+          <th>Tag</th>
+          <th colspan="2">Description</th>
+        </tr>
+        <tr>
+          <td><code>&lt;table></code></td>
+          <td>Defines a table</td>
+          <td rowspan="2" style="background-color: yellow;"></td>
+        </tr>
+        <tr>
+          <td><code>&lt;th></code></td>
+          <td>Defines a header cell in a table</td>
+          <!--<td></td>-->
+        </tr>
+        <tr>
+          <td><code>&lt;tr></code></td>
+          <td>Defines a row in a table</td>
+          <td rowspan="3" style="background-color: gold;"></td>
+        </tr>
+        <tr>
+          <td><code>&lt;td></code></td>
+          <td>Defines a cell in a table</td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td><code>&lt;Caption></code></td>
+          <td> Defines a table caption</td>
+          <!-- <td></td> -->
+        </tr>
+      </table>
+    </article>
+
+    <article class="article2">
+      <!-- Here we will learn form -->
+      <h2>What are HTML forms?</h2>
+      <p>HTML Forms are one of the main points of interaction between a user and a web site or application. They allow users to send data to the web site. Most of the time that data is sent to the web server, but the web page can also intercept it to
+        use it on its own.</p>
+      <p>An HTML Form is made of one or more widgets. Those widgets can be text fields (single line or multiline), select boxes, buttons, checkboxes, or radio buttons. Most of the time those widgets are paired with a label that describes their
+        purpose — properly implemented labels are able to clearly instruct both sighted and blind users on what to enter into a form input.</p>
+      <p>The main difference between a HTML form and a regular HTML document is that most of the time, the data collected by the form is sent to a web server. In that case, you need to set up a web server to receive and process the data. How to set
+        up such a server is beyond the scope of this article, but if you want to know more, see Sending form data later in the module.</p>
+      <hr>
+      <h3>Designing your form</h3>
+      <p>Before starting to code, it's always better to step back and take the time to think about your form. Designing a quick mockup will help you to define the right set of data you want to ask your user. From a user experience (UX) point of view,
+        it's important to remember that the bigger your form, the more you risk losing users. Keep it simple and stay focused: ask only for that data you absolutely need. Designing forms is an important step when you are building a site or
+        application. It's beyond the scope of this article to cover the user experience of forms, but if you want to dig into that topic you should read the following articles:</p>
+      <ul>
+        <li>Smashing Magazine has <a href="https://www.smashingmagazine.com/category/forms">very good articles about forms UX</a>, but perhaps the most important is their <a
+            href="https://www.smashingmagazine.com/2011/11/extensive-guide-web-form-usability/">Extensive Guide To Web Form Usability</a>.</li>
+        <li>UXMatters is also a very thoughtful resource with good advice from <a href="http://www.uxmatters.com/mt/archives/2012/05/7-basic-best-practices-for-buttons.php">basic best practices</a> to complex concerns such as <a
+            href="http://www.uxmatters.com/mt/archives/2010/03/pagination-in-web-forms-evaluating-the-effectiveness-of-web-forms.php">multi-page forms</a>.</li>
+      </ul>
+      <p>In this article, we'll build a simple contact form. Let's make a rough sketch.</p>
+      <img src="form-sketch-low.jpg" alt="a simple contact form">
+      <p>Our form will contain three text fields and one button. We are asking the user for their name, their e-mail and the message they want to send. Hitting the button will send their data to a web server.</p>
+      <hr>
+
+      <form action="/" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="user_email">
+        </div>
+        <div>
+          <label for="msg">Message</label>
+          <textarea id="msg" name="user_msg"></textarea>
+        </div>
+        <div class="button">
+          <!-- <button type="button" name="button"></button> -->
+          <button type="submit">Send your message</button>
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <p>Copyright &copy; 2019 Designed by zver1zver2</p>
+  </footer>
+
+  <script type="text/javascript" src="../jquery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

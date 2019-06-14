@@ -1,0 +1,27 @@
+table {
+/*The border-collapse property sets whether table borders should collapse into
+a single border or be separated as in standard HTML.*/
+  /*border-collapse: collapse;*/
+  /*border-collapse: separate;*/
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px; /**/
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+th {
+  text-align: center;
+}
+
+caption {
+  padding: 10px;
+}
+
+td code {
+  font-weight: bold;
+}
